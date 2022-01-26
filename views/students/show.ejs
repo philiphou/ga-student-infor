@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Students</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="nav">
+        <div><a href="/students">Student List</a></div>
+        <div><a href="/students/new">Registeration</a></div>
+    </div>
+
+<section class="main">
+  <h1>Student Details</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Delete?</th>
+        <th>Student ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Python</th>
+        <th>Java</th>
+        <th>C</th>
+   </tr>
+    </thead>
+    <tbody>
+         <tr>
+          <form action="/students/<%=student._id%>?_method=DELETE" method = "POST">
+            <td><button>Yes</button></td>
+          </form>
+          <td><%= student.sid %></td>
+          <td><%= student.firstname %></td>
+          <td><%= student.lastname %></td>
+          <td><%= gpa.python %></td>
+          <td><%= gpa.java %></td>
+          <td><%= gpa.c %></td>
+          <td><a href="/students/<%=student._id%>/gpas/new">Edit GPA</a></td>
+        </tr>   
+    </tbody>
+  </table>
+</section>
+
+
+
+</body>
+</html>
+

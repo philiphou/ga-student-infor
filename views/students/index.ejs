@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title>Students Information</title>
+</head>
+<body>
+    <nav>
+        <a href="/students/new">New Regitstrer </a>
+    
+    </nav>
+  <sectioin class ="main">
+  <table>
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Deatails</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%students.forEach(function(s){%>
+        <tr>
+          <td><%= s.firstname %></td>
+          <td><%= s.lastname %></td>
+          <td><a href="/students/<%=s._id%>">Details</a></td>
+        </tr>
+      <%});%>
+    </tbody>
+  </table>
+</sectioin>
+</body>
+</html>

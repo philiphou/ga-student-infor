@@ -1,0 +1,66 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: lightgray;
+}
+
+a {
+  color:blue;
+  font-size: 20px;
+};
+a:hover{
+  color:hotpink;
+
+}
+table{
+  margin:50px 50px;
+}
+table,th,td{
+  border:1px solid gray;
+  font-size: 25px;
+}
+
+th{
+  background-color: lightyellow;
+}
+th, td{
+  width:150px;
+  text-align:left;
+
+}
+tr:nth-child(even){
+  background-color:lightseagreen;
+} 
+button{
+background-color: crimson;
+font-size: 20px;
+  
+}
+
+.nav{
+  display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ width: 300px;
+
+}
+label{
+  font-size: 20px;
+
+}
+.input{
+  font-size: 20px;
+  width:200px;
+  border-radius: 10%;
+  padding: 10px;
+  margin:auto;
+  
+
+}
+#signupbt{
+  background-color: lightseagreen;
+  font-size: 20px;
+  width: 80px;
+  height: 40px;
+  
+}
