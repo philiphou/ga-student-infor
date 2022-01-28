@@ -14,3 +14,10 @@
 
 4. he/she can look a student's details:
 ![image](https://user-images.githubusercontent.com/94874836/151409105-7fb3176b-63f1-4fc7-89a1-15d61239e895.png)
+
+Technologies Used:
+HTML,CSS,JS,node.js express, mongoDB
+
+Next Steps:
+1. create google Oauth login
+2. create a function to edit courses too
